@@ -1,0 +1,86 @@
+
+{
+    "API_URL" : "https://api.crypto.com/v2/",
+    "public":[
+        {
+            "id": 1,
+            "method": "public/auth",
+            "api_key":  "jdMHj1ZcU8g1eodVx6F5Jd",
+            "sig": "V6wPpswWDrRMLDE29bLd7n",
+            "nonce": 1587846358253
+        },
+        {
+            "id":2,
+            "method":"public/auth",
+            "code":0
+        },
+        {
+            "id": 3,
+            "method": "public/get-instruments",
+            "nonce": 1506584998239
+        },
+        {
+            "id": 4,
+            "method": "public/get-ticker",
+            "code": 0,
+            "result":{
+                "data":[{
+                    "h": "0",       
+                    "l": "0",    
+                    "a": "0",    
+                    "i": "",     
+                    "v": "0",    
+                    "vv": "0",   
+                    "oi": "0",   
+                    "c": "0",    
+                    "b": "0",    
+                    "k": "0",    
+                    "t": 0
+        
+                }]
+            }
+        },
+        {
+            "id": 5,
+            "method": "public/get-trades",
+            "code": 0,
+            "result": {
+                "data": [{
+                    "s": "",
+                    "p": "",
+                    "q": "",
+                    "t": 0,
+                    "d": "",
+                    "i": "",
+                    "dataTime": 0
+                }]
+            }
+        }
+
+    ],
+    "private":[
+        {
+            "id": 1,
+            "method": "private/set-cancel-on-disconnect",
+            "code": 0,
+            "result":{
+                "scope": "CONNECTION"
+            }
+        },
+        {
+            "id": 2,
+            "method": "private/create-order",
+            "params": {
+              "instrument_name": "ETH_CRO",
+              "side": "BUY",
+              "type": "LIMIT",
+              "price": 100.12,
+              "quantity": 1.2,
+              "client_oid": "my_order_0002",
+              "time_in_force": "GOOD_TILL_CANCEL",
+              "exec_inst": "POST_ONLY"
+            },
+            "nonce": 1587846358253
+           }
+    ]
+}
