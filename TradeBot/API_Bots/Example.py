@@ -3,8 +3,8 @@ import tkinter as tk
 
 # Initialize the exchange API
 exchange = ccxt.binance({
-    'apiKey': 'jdMHj1ZcU8g1eodVx6F5Jd',
-    'secret': 'V6wPpswWDrRMLDE29bLd7n',
+    'apiKey': '',
+    'secret': '',
 })
 
 # Define the trading parameters
